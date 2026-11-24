@@ -70,9 +70,16 @@ h1,h2,h3{font-family:var(--f-serif);color:var(--ink);font-weight:600;letter-spac
 .menu-btn{display:none;justify-self:end;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line);place-items:center}
 .menu-btn span{display:block;width:18px;height:1.5px;background:var(--ink);box-shadow:0 -5px 0 var(--ink),0 5px 0 var(--ink)}
 .mnav{display:none}
-@media (max-width:1000px){
+.nav-actions{justify-self:end;display:flex;align-items:center;gap:10px}
+.mnav-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.mnav .mnav-actions .btn{margin-top:0;border-bottom:0}
+.mnav .mnav-actions .btn-primary{color:#fff}
+.mnav .mnav-actions .btn-ghost{border:1.5px solid var(--maroon);color:var(--maroon)}
+.mnav .mnav-actions .btn-ghost:hover{color:#fff}
+/* menu button (☰) below 1180px: the links plus Login and Book Counselling don't fit on one line */
+@media (max-width:1180px){
   .nav-in{grid-template-columns:1fr auto}
-  .links,.nav .btn{display:none}
+  .links,.nav-actions{display:none}
   .menu-btn{display:grid}
   .mnav.open{display:flex;flex-direction:column;padding:6px var(--gutter) 24px;border-top:1px solid var(--line)}
   .mnav a{font:600 26px/1.3 var(--f-serif);color:var(--ink);text-decoration:none;padding:10px 0;border-bottom:1px solid var(--line)}

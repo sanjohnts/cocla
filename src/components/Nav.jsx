@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { site } from '../data/site'
 import { asset } from '../lib/helpers'
 import useScrollSpy from '../hooks/useScrollSpy'
-import { IconCalendar } from './svg/icons'
+import { IconCalendar, IconUser } from './svg/icons'
 
 const SPY_IDS = site.navLinks.map((l) => l.id)
 
@@ -35,10 +35,16 @@ export default function Nav() {
             </a>
           ))}
         </nav>
-        <a className="btn btn-primary" href="#book">
-          <IconCalendar />
-          Book Counselling
-        </a>
+        <div className="nav-actions">
+          <a className="btn btn-ghost" href={site.brand.loginUrl}>
+            <IconUser />
+            {site.brand.loginLabel}
+          </a>
+          <a className="btn btn-primary" href="#book">
+            <IconCalendar />
+            Book Counselling
+          </a>
+        </div>
         <button
           className="menu-btn"
           type="button"
@@ -61,9 +67,15 @@ export default function Nav() {
             {l.label}
           </a>
         ))}
-        <a className="btn btn-primary" href="#book">
-          Book Free Counselling →
-        </a>
+        <div className="mnav-actions">
+          <a className="btn btn-primary" href="#book">
+            Book Free Counselling →
+          </a>
+          <a className="btn btn-ghost" href={site.brand.loginUrl}>
+            <IconUser />
+            {site.brand.loginLabel}
+          </a>
+        </div>
       </nav>
     </header>
   )

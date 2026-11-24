@@ -9,6 +9,8 @@ export const site = {
     "whatsappDisplay": "+91 82817 69555",
     "defaultWhatsAppMessage": "Hi COCLA, I'd like free counselling for the Japan programme.",
     "mapsUrl": "https://www.google.com/maps/search/?api=1&query=College+of+Commerce+Kannur",
+    "loginUrl": "https://estalearn.com/auth/login",
+    "loginLabel": "Login",
     "socials": {
       "youtube": "https://www.youtube.com/@cocla-kannur",
       "instagram": "https://www.instagram.com/coclanguageacademy",
