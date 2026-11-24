@@ -5,6 +5,7 @@ import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Courses from './components/Courses'
 import About from './components/About'
+import Video from './components/Video'
 import Path from './components/Path'
 import Students from './components/Students'
 import Sectors from './components/Sectors'
@@ -37,6 +38,7 @@ export default function App() {
         <Hero />
         <Courses onEnrol={enrol} />
         <About />
+        <Video />
         <Path />
         <Students />
         <Sectors />

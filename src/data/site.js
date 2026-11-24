@@ -139,6 +139,17 @@ export const site = {
       "texture": "course-jft.jpg"
     }
   ],
+  "video": {
+    "youtubeId": "0tjYQT1sM_Q",
+    "label": "Course introduction",
+    "title": "Discover Our Japanese Language Programme",
+    "intro": "Watch this short introduction to see how our courses work and how we prepare students for a career in Japan.",
+    "playLabel": "Watch course introduction",
+    "soundLabel": "Tap for sound",
+    "playerTitle": "COCLA course introduction video (Malayalam)",
+    "caption": "ജപ്പാനിൽ ജോലി നേടാം! SSW സ്‌കീമിലൂടെ നിങ്ങളുടെ കരിയർ സുരക്ഷിതമാക്കൂ",
+    "moreLabel": "More videos on YouTube"
+  },
   "steps": [
     {
       "n": "01",
